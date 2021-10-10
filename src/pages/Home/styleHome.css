@@ -1,0 +1,180 @@
+section.slide1 {
+  background-color: #318aff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23318AFF' cx='50' cy='0' r='50'/%3E%3Cg fill='%233886ff' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e81ff' cx='50' cy='100' r='50'/%3E%3Cg fill='%23457dff' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%234c79ff' cx='50' cy='200' r='50'/%3E%3Cg fill='%235274ff' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235970fe' cx='50' cy='300' r='50'/%3E%3Cg fill='%23606cfe' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236667fe' cx='50' cy='400' r='50'/%3E%3Cg fill='%236d63fe' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23745ffe' cx='50' cy='500' r='50'/%3E%3Cg fill='%237a5afe' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%238156fe' cx='50' cy='600' r='50'/%3E%3Cg fill='%238751fe' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e4dfe' cx='50' cy='700' r='50'/%3E%3Cg fill='%239549fe' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%239b44fd' cx='50' cy='800' r='50'/%3E%3Cg fill='%23a240fd' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a93cfd' cx='50' cy='900' r='50'/%3E%3Cg fill='%23af37fd' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23B633FD' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+
+  z-index: 0;
+  height: 100vh;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2vw;
+  line-height: 3vw;
+  overflow: hidden;
+  position: relative;
+}
+
+section.slide1 span {
+  color: #ffb97a;
+}
+
+section.slide1 h2 {
+  line-height: 1.5vw;
+  margin-top: 2vh;
+  font-size: 1vw;
+}
+
+section.slide1 h1 {
+  font-weight: bold;
+}
+
+#downarow {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.squiggle1 {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 49%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.squiggle2 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  transform: rotate(350deg);
+  z-index: -1;
+}
+
+.dots {
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: 2%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: scale(0.7);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos-bub-1 {
+  transform: scale(1) translate(70%, -900%) rotate(0deg);
+}
+
+.pos-bub-2 {
+  transform: scale(1) translate(0%, -600%) rotate(0deg);
+}
+
+.pos-bub-3 {
+  transform: scale(1) translate(60%, -210%) rotate(0deg);
+}
+
+.sizebub {
+  height: 13%;
+  width: 40%;
+}
+
+/*  */
+
+/*  */
+
+#icon2 {
+  transform: scale(1.5) translate(-30%, -20%) rotate(180deg);
+}
+
+#bubble2parent #bubble2main {
+  transition: color 0.3s ease-in-out;
+}
+
+#bubble2parent #icon2 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble2parent:hover #bubble2main {
+  color: #ffb97a;
+}
+
+#bubble2parent:hover #icon2 {
+  fill: #ffb97a;
+  cursor: pointer;
+}
+
+/*  */
+/*  */
+
+#icon1 {
+  transform: scale(1.5) translate(-10%, -20%) rotate(180deg) scaleX(-1);
+}
+
+#bubble1parent #bubble1main {
+  transition: color 0.3s ease-in-out;
+}
+
+#bubble1parent #icon1 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble1parent:hover #bubble1main {
+  color: #ffb97a;
+}
+
+#bubble1parent:hover #icon1 {
+  fill: #ffb97a;
+  cursor: pointer;
+}
+
+/*  */
+/*  */
+
+#icon3 {
+  transform: scale(1.5) translate(-32%, -5%) rotate(270deg) scaleX(-1);
+}
+
+#bubble3parent #bubble3main {
+  transition: color 0.3s ease-in-out;
+}
+
+#bubble3parent #icon3 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble3parent:hover #bubble3main {
+  color: #ffb97a;
+}
+
+#bubble3parent:hover #icon3 {
+  fill: #ffb97a;
+  cursor: pointer;
+}
+
+/*  */
+
+#lottie {
+  transform: scale(1) translate(-28.5%, -6.5%);
+}

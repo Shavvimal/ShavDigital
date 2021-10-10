@@ -1,0 +1,59 @@
+#portfolio a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#portfolio a:hover {
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+#portfolio .current {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul a {
+  font-family: "Heebo", sans-serif;
+  display: inline-block;
+  padding: 5px;
+}
+
+.hzbg {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#grid h2 {
+  font-size: 1.2vw;
+  line-height: 2vw;
+  font-weight: bold;
+}
+
+#grid h1 {
+  font-weight: bold;
+}
+
+#grid p {
+  font-size: 1vw;
+}
+
+#banner {
+  font-size: 1vw;
+  font-weight: bold;
+}

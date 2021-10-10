@@ -1,0 +1,34 @@
+
+nav {
+    position: fixed;
+    float: left;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between; 
+  }
+  
+  .bg-1 {
+    background-image: linear-gradient(#00b6fe, #336dff);
+  }
+
+  .bg-2 {
+    background-image: linear-gradient(#664cff, #8042ff);
+  }
+
+  .bg-3 {
+    background-image: linear-gradient(#953fff, #b043ff);
+  }
+  
+  .bg-4 {
+    background-image: linear-gradient(#e553f4, #fe6ad9);
+  }
+  
+  .bg-5 {
+    background-image: linear-gradient(#ff78bf, #ffb67c);
+  }
+
+  #navtrans {
+    transform: scale(1) translate(-39px, 0%);
+}
