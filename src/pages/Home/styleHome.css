@@ -17,16 +17,6 @@ section.slide1 span {
   color: #ffb97a;
 }
 
-section.slide1 h2 {
-  line-height: 1.5vw;
-  margin-top: 2vh;
-  font-size: 1vw;
-}
-
-section.slide1 h1 {
-  font-weight: bold;
-}
-
 #downarow {
   position: absolute;
   bottom: 0;
@@ -84,97 +74,142 @@ section.slide1 h1 {
 }
 
 .pos-bub-1 {
-  transform: scale(1) translate(70%, -900%) rotate(0deg);
+  transform: scale(2.3) translate(85%, 75%);
 }
 
 .pos-bub-2 {
-  transform: scale(1) translate(0%, -600%) rotate(0deg);
+  transform: scale(3) translate(97%, 80%) rotate(0deg);
 }
 
 .pos-bub-3 {
-  transform: scale(1) translate(60%, -210%) rotate(0deg);
+  transform: scale(1.62) translate(278%, 89%) rotate(0deg);
+}
+
+.pos-bub-4 {
+  transform: scale(2.1) translate(90%, 90%);
 }
 
 .sizebub {
   height: 13%;
-  width: 40%;
+  width: 7%;
 }
 
-/*  */
-
-/*  */
-
-#icon2 {
-  transform: scale(1.5) translate(-30%, -20%) rotate(180deg);
+#bubble1main {
+  transform: rotate(230deg);
 }
 
-#bubble2parent #bubble2main {
-  transition: color 0.3s ease-in-out;
+#bubble3main {
+  transform: rotate(-40deg);
 }
 
-#bubble2parent #icon2 {
-  transition: fill 0.3s ease-in-out;
+#bubble4main {
+  transform: rotate(-60deg);
 }
 
-#bubble2parent:hover #bubble2main {
-  color: #ffb97a;
-}
-
-#bubble2parent:hover #icon2 {
-  fill: #ffb97a;
-  cursor: pointer;
-}
-
-/*  */
 /*  */
 
 #icon1 {
-  transform: scale(1.5) translate(-10%, -20%) rotate(180deg) scaleX(-1);
-}
-
-#bubble1parent #bubble1main {
-  transition: color 0.3s ease-in-out;
+  transform: scale(0.48) translate(0%, 0%);
 }
 
 #bubble1parent #icon1 {
   transition: fill 0.3s ease-in-out;
 }
 
-#bubble1parent:hover #bubble1main {
-  color: #ffb97a;
+#bubble1parent {
+  transition: transform 0.3s ease-in-out;
 }
 
 #bubble1parent:hover #icon1 {
   fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
   cursor: pointer;
 }
 
+#bubble1parent:hover {
+  transform: scale(2.4) translate(81.5%, 73%);
+}
+
 /*  */
+
+#icon2 {
+  transform: scale(0.41) translate(0%, 0%);
+}
+
+#bubble2parent #icon2 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble2parent {
+  transition: transform 0.3s ease-in-out;
+}
+
+#bubble2parent:hover #icon2 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+#bubble2parent:hover {
+  transform: scale(3.1) translate(94%, 78%) rotate(0deg);
+}
+
 /*  */
 
 #icon3 {
-  transform: scale(1.5) translate(-32%, -5%) rotate(270deg) scaleX(-1);
-}
-
-#bubble3parent #bubble3main {
-  transition: color 0.3s ease-in-out;
+  transform: scale(0.5) translate(0%, 0%);
 }
 
 #bubble3parent #icon3 {
   transition: fill 0.3s ease-in-out;
 }
 
-#bubble3parent:hover #bubble3main {
-  color: #ffb97a;
+#bubble3parent {
+  transition: transform 0.3s ease-in-out;
 }
 
 #bubble3parent:hover #icon3 {
   fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
   cursor: pointer;
+}
+
+#bubble3parent:hover {
+  transform: scale(1.72) translate(262.5%, 84%);
 }
 
 /*  */
 
-#lottie {
-  transform: scale(1) translate(-28.5%, -6.5%);
+#icon4 {
+  transform: scale(0.45) translate(0%, 0%);
+}
+
+#bubble4parent #icon4 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble4parent {
+  transition: transform 0.3s ease-in-out;
+}
+
+#bubble4parent:hover #icon4 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+#bubble4parent:hover {
+  transform: scale(2.2) translate(86%, 86%);
 }

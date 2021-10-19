@@ -57,27 +57,40 @@ const Portfolio = () => {
 
 
     <div id="portfolio" class="flex flex-col justify-center md:justify-start pt-8 md:pt-12 px-8 md:px-24  lg:px-44 h-auto ">
-      <h1 class="bodyheadercol text-left text-4xl font-extrabold">A Trusted Ad Management Company</h1>
-      <h2 class="text-left text-2xl py-3 italic" > Just a few simple steps to get started </h2>
-      <p class="text-left text-xl"> As a prominent PPC management company, we enable your business to reach successful heights with our diverse paid ad marketing services.
-      </p>
-      <div id="banner" className="w-full py-4 px-10 rounded-full m-4 text-center text-white gradientTech mx-auto"> Strict NDA Terms | No Additional Charges | Cost-effective Service | Flexible Models</div>
-      <div class="grid grid-cols-3 gap-8 w-full text-center mx-auto px-40" id="grid">
-        <div className="flex flex-col"><div > <h1 className="gradientTech rounded-full text-white py-2 mx-10" > 1 </h1></div>
-          <h2>Define your goals</h2>
-          <p>We help you clearly define realistic marketing goals & budgets</p>
-        </div>
+      <h1 class="bodyheadercol text-left text-4xl font-extrabold">My Portfolio</h1>
+      <h2 class="text-left text-2xl py-3 italic" > Please feel free to check out some of my work! </h2>
+      <div class="">
+        <NavLink to="/Portfolio/Web" activeClassName="current  ">Web</NavLink>
+        <NavLink to="/Portfolio/Graphic" activeClassName="current">Graphic</NavLink> </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 w-auto h-auto pt-8 p-4 ">
+        <Switch>
+          <Route exact path="/">{renderWebCards()}</Route>
+          <Route path="/AboutMe">{renderWebCards()}</Route>
+          <Route path="/TechStack">{renderWebCards()}</Route>
+          <Route path="/Contact">{renderWebCards()}</Route>
 
-        <div className="flex flex-col"><div > <h1 className="gradientTech rounded-full text-white py-2 mx-10" > 2 </h1></div>
-          <h2>Grow your audience</h2>
-          <p>We dramatically increase your website traffic, grow your email lists and segment customer data</p>
-        </div>
 
-        <div className="flex flex-col"><div > <h1 className="gradientTech rounded-full text-white py-2 mx-10" > 3 </h1></div>
-          <h2>Exceed your expectations</h2>
-          <p>Your growing audience enables us to utilise data to improve targeting and increase profitability of your advertising</p>
-        </div>
+          <Route exact path="/Portfolio">
+
+            {renderWebCards()}
+
+          </Route>
+
+          <Route path="/Portfolio/Web">
+
+            {renderWebCards()}
+
+          </Route>
+          <Route path="/Portfolio/Graphic">
+
+            {renderGraphicsCards()}
+
+
+          </Route>
+        </Switch>
+
       </div>
+
     </div>
 
 

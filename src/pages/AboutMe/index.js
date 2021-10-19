@@ -62,9 +62,12 @@ const AboutMe = () => {
                 <div class="w-full pt-10 bg-red lg:w-2/3 flex flex-col">
 
                     <div id="left" class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-44">
-                        <h1 class="bodyheadercol text-left text-4xl font-extrabold">Not all advertising is profitable</h1>
-                        <h2 class="text-left text-2xl py-3 italic" > Unfocused ads are shown to the wrong audience, resulting in wasted time, opportunities and money </h2>
-                        <p class="text-left text-xl"> At ShavDigital, we use Data to increase the profitability of your ads, by delivering the right message at the right place, to the right people at the right time, driving more Traffic, Leads & Sales to your website. As a prominent PPC management company, we enable your business to reach successful heights with our diverse paid ad marketing services.
+                        <h1 class="bodyheadercol text-left text-4xl font-extrabold">About Me</h1>
+                        <h2 class="text-left text-2xl py-3 italic" > I value Overcoming Challenges, Continuously Learning & Creating  </h2>
+                        <p class="text-left text-xl"> I decided to pursue a career in software development (having graduated with a First Class Honours in Chemical Engineering) after I tried my hand at using Python while training my own StyleGAN to artificially generate artwork. As someone who loves to paint, I value creativity and attention-to-detail in everything I do, and Software engineering is the perfect creative outlet that values and leverages these skills, but also the analytical, interpersonal, technical and problem-solving skills I have honed during my time as an engineer. In the future I aspire to work with the latest tech, helping to innovate and create high-quality and revolutionary apps, projects, products and services. Aside from programming and painting, I love to dance, hit the gym, complete obstacle courses, and manage my investment portfolio.
+                            <br></br><br></br>
+                            Currently, I am training with futureproof to upskill as a Full Stack Developer in order to kick-start my career in Software Engineering. I’m excited to be transitioning from coding as a hobby to becoming a valuable part of a team that builds innovative software products to meet user needs.
+
                         </p>
 
 
@@ -100,10 +103,13 @@ const AboutMe = () => {
 
                         <div className="bubble2Anim1" ref={(el) => (bubble2Anim1 = el)} id="downloadParent">
                             <img id="bubble1mainFace" class="w-full h-full  absolute " src={mainBubble} alt="mainBubble1" />
-                            <a href="mailto:shavhugan@gmail.com?subject=Hello%20Shav&body=Hi%20Shav,">
+                            <a href={CV} download>
+
+                                {/* <img id="downloadFace" class="  h-1" src={download} style={{ cursor: "pointer" }} alt="mainBubble1" />  */}
 
                                 <svg id='downloadFace' fill="white" class="w-1 h-1" viewBox="0 0 512 512" >
-                                    <path d="M485.743,85.333H26.257C11.815,85.333,0,97.148,0,111.589V400.41c0,14.44,11.815,26.257,26.257,26.257h459.487 c14.44,0,26.257-11.815,26.257-26.257V111.589C512,97.148,500.185,85.333,485.743,85.333z M475.89,105.024L271.104,258.626 c-3.682,2.802-9.334,4.555-15.105,4.529c-5.77,0.026-11.421-1.727-15.104-4.529L36.109,105.024H475.89z M366.5,268.761 l111.59,137.847c0.112,0.138,0.249,0.243,0.368,0.368H33.542c0.118-0.131,0.256-0.23,0.368-0.368L145.5,268.761 c3.419-4.227,2.771-10.424-1.464-13.851c-4.227-3.419-10.424-2.771-13.844,1.457l-110.5,136.501V117.332l209.394,157.046 c7.871,5.862,17.447,8.442,26.912,8.468c9.452-0.02,19.036-2.6,26.912-8.468l209.394-157.046v275.534L381.807,256.367 c-3.42-4.227-9.623-4.877-13.844-1.457C363.729,258.329,363.079,264.534,366.5,268.761z" />
+                                    <path d="M339.093,246.464c-3.627-7.232-11.008-11.797-19.093-11.797h-42.667V21.333C277.333,9.557,267.797,0,256,0 s-21.333,9.557-21.333,21.333v213.333H192c-8.085,0-15.467,4.565-19.093,11.797c-3.584,7.232-2.816,15.872,2.027,22.336l64,85.333 c0.277,0.363,0.704,0.491,1.003,0.832c1.408,1.664,3.072,2.944,4.928,4.117c0.768,0.469,1.365,1.088,2.197,1.472 c2.731,1.28,5.717,2.112,8.939,2.112s6.208-0.832,8.96-2.112c0.811-0.384,1.429-1.003,2.176-1.472 c1.856-1.173,3.52-2.453,4.928-4.117c0.277-0.341,0.725-0.469,1.003-0.832l64-85.333 C341.931,262.336,342.699,253.696,339.093,246.464z" />
+                                    <path d="M490.667,320c-11.797,0-21.333,9.557-21.333,21.333v64c0,35.285-28.715,64-64,64H106.667c-35.285,0-64-28.715-64-64v-64 c0-11.776-9.536-21.333-21.333-21.333C9.536,320,0,329.557,0,341.333v64C0,464.149,47.851,512,106.667,512h298.667 C464.149,512,512,464.149,512,405.333v-64C512,329.557,502.464,320,490.667,320z" />
                                 </svg>
                             </a>
                         </div>
