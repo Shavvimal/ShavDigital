@@ -26,7 +26,7 @@ function App() {
             <TechStack />
             <Portfolio />
             <Contact />
-            <Modal isItOpen={ModalClose} updateOpen={handleModalClose} />
+            {/* <Modal isItOpen={ModalClose} updateOpen={handleModalClose} /> */}
 
         </>
     )
