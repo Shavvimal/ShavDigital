@@ -16,3 +16,6 @@
 
 [x] Need to fix Routing Reload error
 [ ] Header and Aside Nav Scroltrigger relative to themselves. Need to use ref, so not dependent on window load location
+
+##Tailwind 
+https://www.youtube.com/watch?v=kyjmpeBbtPg&t=392s
