@@ -139,7 +139,7 @@ const Home = () => {
 
 
                     <div id="slide-1-content-left" className="contentLeft" ref={(el) => (contentLeft = el)} class="flex flex-col justify-center lg:justify-start my-auto pt-8 lg:pt-0 px-8 lg:px-24 lg:px-32 ">
-                        <h1 class="text-center lg:text-left text-3xl lg:text-4xl">Welcome! My name is <span>Shav Vimalendiran</span> and I'm a Full Stack Developer at Futureproof.
+                        <h1 class="text-center lg:text-left text-3xl lg:text-4xl">Welcome! My name is <span>Shav Vimalendiran</span> and I'm an AI & Data Scientist at Apollo SaturnF1.
                         </h1>
 
 
