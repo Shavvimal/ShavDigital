@@ -100,17 +100,17 @@ const TechStack = () => {
                 <div className=" px-8  flex flex-col">
                     <div className=" w-full md:px-24 lg:px-44  ">
                         <div class="flex w-full mt-12 justify-between">
-                            <h1 className=" text-left text-4xl font-extrabold ">My Tech Stack</h1>
-                            <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="shuffle"> <button type="checkbox" className="form-checkbox px-6" id="shuffle" defaultChecked={checked} onClick={() => setChecked(!checked)} > Re-Shuffle </button> </label>
+                            <h1 className=" text-left text-6xl lg:text-4xl font-extrabold ">My Tech Stack</h1>
+                            <label className="invisible lg:visible inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="shuffle"> <button type="checkbox" className="form-checkbox px-6" id="shuffle" defaultChecked={checked} onClick={() => setChecked(!checked)} > Re-Shuffle </button> </label>
                         </div>
-                        <h2 className=" text-left text-2xl py-3 italic w-full" > My preferred combination of programming languages, frameworks, and tools </h2>
-                        <p className=" text-left text-xl w-full"> I'm always looking to learn new technologies to widen my skillset. Here are some of the software and technologies that I’m already familiar with.
+                        <h2 className=" text-left text-4xl lg:text-2xl py-3 italic w-full" > My preferred combination of programming languages, frameworks, and tools </h2>
+                        <p className=" text-left text-3xl lg:text-xl w-full"> I'm always looking to learn new technologies to widen my skillset. Here are some of the software and technologies that I’m already familiar with.
                         </p></div>
 
 
                 </div>
 
-                <div className="grid grid-cols-3 lg:grid-cols-6 gap-14 w-full h-full pt-8 p-4">
+                <div className="grid grid-cols-2 lg:grid-cols-6 gap-14 w-full h-full pt-8 p-4 mt-8 lg:mt-2">
                     {/* {rows} */}
 
                     {renderTechBubbles()}

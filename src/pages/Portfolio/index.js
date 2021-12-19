@@ -57,9 +57,9 @@ const Portfolio = () => {
 
 
     <div id="portfolio" class="flex flex-col justify-center md:justify-start pt-8 md:pt-12 px-8 md:px-24  lg:px-44 h-auto ">
-      <h1 class="bodyheadercol text-left text-4xl font-extrabold">My Portfolio</h1>
-      <h2 class="text-left text-2xl py-3 italic" > Please feel free to check out some of my work! </h2>
-      <div class="">
+      <h1 class="bodyheadercol text-left text-6xl lg:text-4xl font-extrabold">My Portfolio</h1>
+      <h2 class="text-left text-4xl lg:text-2xl py-3 italic" > Please feel free to check out some of my work! </h2>
+      <div class="text-4xl lg:text-2xl">
         <NavLink to="/Portfolio/Web" activeClassName="current  ">Web</NavLink>
         <NavLink to="/Portfolio/Graphic" activeClassName="current">Graphic</NavLink> </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 w-auto h-auto pt-8 p-4 ">

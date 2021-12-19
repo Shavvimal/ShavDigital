@@ -139,7 +139,7 @@ const Home = () => {
 
 
                     <div id="slide-1-content-left" className="contentLeft" ref={(el) => (contentLeft = el)} class="flex flex-col justify-center lg:justify-start my-auto pt-8 lg:pt-0 px-8 lg:px-24 lg:px-32 ">
-                        <h1 class="text-center lg:text-left text-3xl lg:text-4xl">Welcome! My name is <span>Shav Vimalendiran</span> and I'm an AI & Data Scientist at Apollo SaturnF1.
+                        <h1 class="text-center lg:text-left text-6xl lg:text-4xl">Welcome! My name is <span>Shav Vimalendiran</span> and I'm an AI & Data Scientist at Apollo SaturnF1.
                         </h1>
 
 
@@ -413,7 +413,7 @@ const Home = () => {
 
 
             <NavLink to="/AboutMe" activeClassName="current" onClick={() => toloc("AboutSect")}>
-                <svg id="downarow" class=" w-8  mb-10 -mr-1 mt-80 animate-bounce" viewBox="0 0 20 20" fill="white">
+                <svg id="downarow" class=" w-16 lg:w-8  mb-10 -mr-1 mt-80 animate-bounce" viewBox="0 0 20 20" fill="white">
                     <path fillRule="evenodd"
                         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                         clipRule="evenodd"></path>

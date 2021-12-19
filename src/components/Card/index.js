@@ -84,10 +84,10 @@ const Card = ({ siteName, description, gifurl, repoLink, siteLink, arrayOfWords,
 
                 <div class="container-content p-4">
                     <div class="flex justify-between items-center pb-1">
-                        <p class="font-semibold">{siteName}</p>
+                        <p class="text-3xl lg:text-xl font-semibold">{siteName}</p>
                     </div>
                 </div>
-                <p class="px-4 mb-6 leading-5">{description}</p>
+                <p class=" text-xl lg:text-sm px-4 mb-6 leading-5">{description}</p>
                 <br />
 
 

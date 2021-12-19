@@ -38,29 +38,29 @@ const Contact = () => {
                 <div id="contact-card" class=" absolute container border shadow-xl m-1 w-5/6 lg:w-2/3 rounded-xl overflow-hidden mt-10 m-auto bg-white mx-auto relative">
                     <div class="container-content p-10 lg:p-20">
 
-                        <h1 class="bodyheadercol text-left text-4xl font-extrabold">Contact Me</h1>
-                        <h2 class="text-left text-2xl py-3 italic" > Please drop a message to say hello and get in touch! I‘d love to hear from you.  </h2>
+                        <h1 class="bodyheadercol text-left text-6xl lg:text-4xl font-extrabold">Contact Me</h1>
+                        <h2 class="text-left text-4xl lg:text-2xl py-3 italic" > Please drop a message to say hello and get in touch! I‘d love to hear from you.  </h2>
 
 
                         <form class="flex flex-col " onSubmit={handleSubmit}>
 
                             <div class="flex flex-col pt-4">
-                                <label htmlFor="name" class="text-left text-xl">Name:</label>
-                                <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
+                                <label htmlFor="name" class="text-left text-3xl lg:text-xl">Name:</label>
+                                <input class=" text-3xl lg:text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="name" type="text" placeholder="Shav" />
                             </div>
 
                             <div class="flex flex-col pt-6">
-                                <label htmlFor="email" class="text-left text-xl">Email:</label>
-                                <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
+                                <label htmlFor="email" class="text-left text-3xl lg:text-xl">Email:</label>
+                                <input class=" text-3xl lg:text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="email" type="email" placeholder="Shav@example.com" />
                             </div>
 
 
 
                             <div class="flex flex-col pt-6 ">
-                                <label htmlFor="messageShav" class="text-left text-xl">Message:</label>
-                                <textarea class=" h-96 text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
+                                <label htmlFor="messageShav" class="text-left text-3xl lg:text-xl">Message:</label>
+                                <textarea class=" h-96 text-3xl lg:text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="messageShav" type="text" placeholder="Hello!" />
                             </div>
 
@@ -116,15 +116,15 @@ const Contact = () => {
                     </div> </div>
 
 
-                    <div class="text-white w-auto  border-white mx-10 flex flex-row justify-around mb-10">
+                    <div class="text-white w-auto  border-white mx-10 flex flex-row justify-around mb-6 text-lg lg:text-sm">
                     <NavLink exact to="/" activeClassName="current" onClick={() => toloc("homesect")}>Home</NavLink>
                     <NavLink to="/AboutMe" activeClassName="current" onClick={() => toloc("AboutSect")}>About Me</NavLink>
                     <NavLink to="/TechStack" activeClassName="current" onClick={() => toloc("Techsect")}>Tech Stack</NavLink>
                     <NavLink to="/Portfolio" activeClassName="current" onClick={() => toloc("portfoliosect")}>Portfolio</NavLink>
                     <NavLink to="/Contact" activeClassName="current" onClick={() => toloc("contactsect")}>Contact Me</NavLink>
                 </div>
-                <div class="text-white w-auto border-t-2 border-white mx-20 flex flex-row justify-between px-6 lg:px-16 pt-6">
-                    <p class="mt-5"> © 2021 Shav Vimalendiran </p>
+                <div class="text-white w-auto border-t-2 border-white mx-20 flex flex-row justify-between px-6 lg:px-16 pt-6 text-lg lg:text-sm">
+                    <p class="mt-3"> © 2021 Shav Vimalendiran </p>
                     <svg class="w-12 h-12" fill="white" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"><path d="M19.56,11.85l4.24-1.39c-.21-.55-3.28.32-3.81.47a62.26,62.26,0,0,0-7.09,2.59c-1.09.54-2.18,1-3.25,1.63-.41-.42-1.56-.92-1.39-1.82.37-1.9,7.2-6.16,9.83-6.11h0c-.22,1.11-2.25,3-3.33,4l.08.12c1.05.2,4-2.41,4.21-3.16a3.62,3.62,0,0,0-.56-2.66c1.23-.83,3.16-3,1.21-4.5A2.89,2.89,0,0,0,18.29.39C19.49,1,20.23,1.93,19.77,3,19,4.62,16.26,4.69,14.28,5.26A17.89,17.89,0,0,0,7.76,8.71c-.89.73-2.4,2.33-1.71,4,.59,1.43,2.41,2.46,2.67,2.9-1.94.74-7.93,4.31-8.46,6A1.91,1.91,0,0,0,1,23.22c1,.82,3.4,0,4.44-.29,3.06-1,9.05-3.62,4.68-7.2h0C12.87,14.05,16.26,13,19.56,11.85ZM1.26,21.3a35.61,35.61,0,0,1,5.12-3.61l2.38-1.37C8.76,18,2.74,21,1.26,21.3Z" /></svg>
                 </div>
 
