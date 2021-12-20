@@ -64,7 +64,7 @@ const Contact = () => {
                         focus:border" name="messageShav" type="text" placeholder="Hello!" />
                             </div>
 
-                            <input class=" text-white bg-custom rounded-full focus:bg-purple-700 w-auto px-28 font-bold text-lg mx-auto p-2 mt-8" name="message" type="submit" value="Get In Touch" />
+                            <input class=" text-white rounded-full focus:bg-purple-700 w-auto px-28 font-bold text-lg mx-auto p-2 mt-8 bg-custom " name="message" type="submit" value="Get In Touch" />
 
 
                         </form>

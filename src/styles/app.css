@@ -25,6 +25,11 @@ p {
   padding: 0;
 }
 
+.bg-custom {
+  --tw-bg-opacity: 1;
+  background-color: rgba(133, 83, 254, var(--tw-bg-opacity));
+}
+
 /* Scrollbar Edit  */
 /* width */
 ::-webkit-scrollbar {
