@@ -13,8 +13,9 @@ section.slide1 {
   position: relative;
 }
 
-section.slide1 span {
+.accentorange {
   color: #ffb97a;
+  border-color: #ffb97a;
 }
 
 #downarow {

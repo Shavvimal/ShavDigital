@@ -84,7 +84,7 @@ const TechStack = () => {
 
     const addToRefs = (el) => {
         items.current = [...items.current, el]
-        console.log(items.current = [])
+        
     };
 
 
@@ -99,7 +99,7 @@ const TechStack = () => {
             <div className="w-full h-auto flex flex-col gradientTech md:justify-start pb-12 my-auto pt-8 md:pt-0 overflow-hidden text-white">
                 <div className=" px-8  flex flex-col">
                     <div className=" w-full md:px-24 lg:px-44  ">
-                        <div class="flex w-full mt-12 justify-between">
+                        <div className="flex w-full mt-12 justify-between">
                             <h1 className=" text-left text-6xl lg:text-4xl font-extrabold ">My Tech Stack</h1>
                             <label className="invisible lg:visible inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="shuffle"> <button type="checkbox" className="form-checkbox px-6" id="shuffle" defaultChecked={checked} onClick={() => setChecked(!checked)} > Re-Shuffle </button> </label>
                         </div>
@@ -119,7 +119,7 @@ const TechStack = () => {
                 </div>
 
 
-            </div>
+            </div> 
 
 
 

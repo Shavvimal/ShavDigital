@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.glow a:hover {
     /* text-shadow: 0 0 1px #ffb97a; */
     text-shadow: -0.2px 0 #ffb97a, 0 0.2px #ffb97a, 0.2px 0 #ffb97a, 0 -0.2px #ffb97a;
 }

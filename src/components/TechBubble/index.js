@@ -39,19 +39,19 @@ let randSign = () => {
         
     return (
         <div className={TechName.replace(/\s/g, '')} >
-        <div class="flex flex-col" 
+        <div className="flex flex-col" 
         className="bubble1Anim1" ref={(el) => (bubble1Anim1 = el)}
         >
 
-            <div class="m-auto w-full h-full  flex flex-row parentBubbleTech">
+            <div className="m-auto w-full h-full  flex flex-row parentBubbleTech">
 
-                <img class="w-1/2 h-1/2 TechBubble" src={mainBubble} alt="mainBubble1" />
+                <img className="w-1/2 h-1/2 TechBubble" src={mainBubble} alt="mainBubble1" />
 
-                <svg class="w-1/2 h-1/2 iconTech" fill="white" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"><path d={Path} /></svg>
+                <svg className="w-1/2 h-1/2 iconTech" fill="white" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"><path d={Path} /></svg>
 
             </div>
-            <div class="techWord flex justify-center">
-            <h3 class=" border-2 px-3 py-1 border-white rounded-full text-sm text-center  font-medium  ">{TechName}</h3></div>
+            <div className="techWord flex justify-center">
+            <h3 className=" border-2 px-3 py-1 border-white rounded-full text-sm text-center  font-medium  ">{TechName}</h3></div>
         </div>
         </div>
     );

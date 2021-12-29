@@ -17,10 +17,10 @@ const Header = () => {
     }
 
     return (
-        <header className="animHeader" ref={(el) => (animHeader = el)} >
+        <header className="animHeader glow" ref={(el) => (animHeader = el)} >
             <NavLink exact to="/" activeClassName="current" onClick={() => toloc("homesect")}>
-            <div class="logo">
-                <svg id='logo' class=" h-10 ml-2 mb-1" viewBox="0 0 1936 1935" >
+            <div className="logo">
+                <svg id='logo' className=" h-10 ml-2 mb-1" viewBox="0 0 1936 1935" >
                     <path fillRule="evenodd" d="M1570.9,952.7c112.9-37.1,225.8-74.1,338.7-111.2c-16.7-43.8-261.7,25.6-304.1,37.9
           c-201.7,58.4-386.3,130-566.2,207c-86.9,43-174.5,83-259.6,130.1c-32.6-33.7-125.1-73.7-111.3-145.5
           c29.4-151.9,574.8-492.1,785-488.5c0.8,0.4,1.6,0.8,2.5,1.2c-17.6,88.3-179.7,236-265.8,319.4c2.1,3.2,4.1,6.3,6.2,9.5
@@ -33,11 +33,9 @@ const Header = () => {
                 </svg>
             </div> </NavLink>
 
-                <ul class="text-white text-right">
-                    <NavLink to="/AboutMe" activeClassName="current" onClick={() => toloc("AboutSect")}>About Me</NavLink>
-                    <NavLink to="/TechStack" activeClassName="current" onClick={() => toloc("Techsect")}>Tech Stack</NavLink>
-                    <NavLink to="/Portfolio" activeClassName="current" onClick={() => toloc("portfoliosect")}>Portfolio</NavLink>
-                    <NavLink to="/Contact" activeClassName="current" onClick={() => toloc("contactsect")}>Contact Me</NavLink>
+                <ul className="text-white text-right mt-3">
+                      <NavLink to="/" activeClassName="current" >Portfolio</NavLink>
+                    <NavLink to="/blog" activeClassName="current" >Blog</NavLink>
                 </ul>
 
         </header>
