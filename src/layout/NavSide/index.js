@@ -11,10 +11,6 @@ const Aside = () => {
     finalAnim(animHeader);
   }, []);
 
-  let toloc = (id) => {
-    window.location.hash = id;
-  };
-
   return (
     <nav
       className="animHeader"

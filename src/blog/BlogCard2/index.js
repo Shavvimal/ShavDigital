@@ -23,7 +23,7 @@ const BlogCard2 = ({
           <img
             className="object w-full h-full object-cover"
             src={
-              `http://localhost:8000${thumbnail}` ||
+              `https://shavbackend.herokuapp.com${thumbnail}` ||
               `https://source.unsplash.com/random/?${title
                 .split(" ")
                 .join(",")}`

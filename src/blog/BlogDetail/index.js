@@ -10,7 +10,9 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/blog/${slug}`);
+        const res = await axios.get(
+          `https://shavbackend.herokuapp.com/api/blog/${slug}`
+        );
         setBlog(res.data);
       } catch (err) {}
     };
@@ -44,7 +46,7 @@ const BlogDetail = () => {
           <article className=" -mt-16 max-w-prose bg-white px-20 rounded-2xl text-black mx-auto py-8 ">
             <div className="h-16"> </div>
             <h2 className="mt-2 text-sm text-gray-500 text-center">
-              Published {blog.month} {blog.day}
+              Published in {blog.category}, {blog.month} {blog.day}
             </h2>
             <h1 className="text-3xl font-bold text-center ">
               {blog.chapter}.{blog.sub_chapter}: {blog.title}

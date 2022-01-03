@@ -13,7 +13,9 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/blog");
+        const res = await axios.get(
+          "https://shavbackend.herokuapp.com/api/blog"
+        );
         setFeaturedBlog(res.data[Math.floor(Math.random() * res.data.length)]);
       } catch (err) {}
     };
@@ -36,6 +38,12 @@ const Blog = () => {
                 featuredBlog.thumbnail ||
                 `https://source.unsplash.com/random/?${featuredBlog.category}`
               }
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = `https://source.unsplash.com/random/?${title
+                  .split(" ")
+                  .join(",")}`;
+              }}
               className="mx-auto rounded-xl maxhalf "
               alt=""
             />

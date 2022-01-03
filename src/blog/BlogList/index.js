@@ -11,7 +11,9 @@ const BlogList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/blog/featured");
+        const res = await axios.get(
+          "https://shavbackend.herokuapp.com/api/blog/featured"
+        );
         setFeaturedBlog(res.data[0]);
       } catch (err) {}
     };
@@ -21,7 +23,9 @@ const BlogList = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/blog");
+        const res = await axios.get(
+          "https://shavbackend.herokuapp.com/api/blog"
+        );
         setBlogs(res.data);
       } catch (err) {}
     };

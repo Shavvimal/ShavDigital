@@ -9,6 +9,7 @@ import { BlogCard2 as BlogCard } from "../";
 
 const CategoryChapter = (props) => {
   const [blogs, setBlogs] = useState([]);
+  const [SubChapterTitle, setSubChapterTitle] = useState([]);
   let { category } = useParams();
   let { chapter } = useParams();
 
@@ -22,10 +23,11 @@ const CategoryChapter = (props) => {
     const fetchData = async () => {
       try {
         const res = await axios.post(
-          `http://localhost:8000/api/blog/categorychapter`,
+          `https://shavbackend.herokuapp.com/api/blog/categorychapter`,
           { category, chapter },
           config
         );
+        setSubChapterTitle(res.data[0].chapter_title);
         setBlogs(
           res.data.sort(function IHaveAName(a, b) {
             return b.sub_chapter < a.sub_chapter
@@ -71,9 +73,9 @@ const CategoryChapter = (props) => {
   };
 
   const renderBlog = () =>
-    shuffle(blogs).map((t) => (
+    blogs.map((t) => (
       <BlogCard
-        key={t.title}
+        key={t.slug}
         category={t.category}
         title={t.title}
         month={t.month}
@@ -89,10 +91,14 @@ const CategoryChapter = (props) => {
 
   return (
     <section id="homesect" className="slide1 text-white">
-      <div className=" w-full h-full flex  flex-wrap pt-20   ">
+      <div className=" w-full h-full flex flex-wrap pt-20   ">
         <BlogNav />
         <CatDropdown arrayOfChapter={chapters()} />
+
         <div className="  h-full w-full pt-4 pb-32 overflow-scroll ">
+          <h1 className="text-center text-3xl pb-4 font-bold">
+            Chapter {chapter}: {SubChapterTitle}
+          </h1>
           {renderBlog()}
         </div>
       </div>

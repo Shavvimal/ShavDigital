@@ -21,7 +21,7 @@ const Category = (props) => {
     const fetchData = async () => {
       try {
         const res = await axios.post(
-          `http://localhost:8000/api/blog/category`,
+          `https://shavbackend.herokuapp.com/api/blog/category`,
           { category },
           config
         );
@@ -64,7 +64,7 @@ const Category = (props) => {
   const renderBlog = () =>
     shuffle(blogs).map((t) => (
       <BlogCard
-        key={t.title}
+        key={t.slug}
         category={t.category}
         title={t.title}
         month={t.month}
