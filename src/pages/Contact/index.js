@@ -20,7 +20,7 @@ const Contact = () => {
       headers: { "Content-Type": "application/json" },
     };
 
-    fetch("http://127.0.0.1:8000/api/contact/post", options)
+    fetch("https://shavbackend.herokuapp.com/api/contact/post", options)
       .then((r) => r.json())
       .then(() => e.target.reset())
       .catch(console.warn);
