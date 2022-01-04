@@ -26,12 +26,12 @@ const Blog = () => {
     <section className="slide1 text-white pt-20">
       <BlogNav />
       <div className=" w-full h-full flex flex-col flex-wrap flex justify-center items-center pb-32 ">
-        <p className="mb-4 text-3xl  w-5/6 md:w-4/6 lg:w-1/2 text-center md:text-2xl">
+        <p className="mb-4 text-3xl  w-5/6 lg:w-4/6 lg:w-1/2 text-center lg:text-2xl">
           {" "}
           Welcome to my Blog! Here's a shuffled post to dive straight in:{" "}
         </p>
 
-        <div className="relative flex flex-col  md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-xl p-3  border border-white bg-white h-min hover:scale-105 duration-500  transform transition w-5/6 md:w-4/6 lg:w-1/2  pb-2 bg-white">
+        <div className="relative flex flex-col  lg:flex-row lg:space-x-5 space-y-3 lg:space-y-0 rounded-xl shadow-xl p-3  border border-white bg-white h-min hover:scale-105 duration-500  transform transition w-5/6 lg:w-4/6 lg:w-1/2  pb-2 bg-white">
           <div className="relative  my-auto">
             <img
               src={
@@ -51,31 +51,31 @@ const Blog = () => {
 
           <div className="px-2 py-1 space-y-2 p-3 flex flex-col ">
             <div className="flex justify-between item-center">
-              <p className="text-gray-500 font-medium text-base hidden md:block">
+              <p className="text-gray-500 font-medium text-base hidden lg:block">
                 {featuredBlog.month} {featuredBlog.day}
               </p>
-              <div className="bg-gray-200 px-3 h-min my-auto rounded-full text-base text-gray-800 hidden md:block">
+              <div className="bg-gray-200 px-3 h-min my-auto rounded-full text-base text-gray-800 hidden lg:block">
                 {" "}
                 {featuredBlog.category}{" "}
               </div>
             </div>
             <div className="h-full flex flex-col justify-center w-5/6 mx-auto">
-              <div className=" text-black text-3xl md:text-2xl font-bold pr-2  ">
+              <div className=" text-black text-5xl lg:text-2xl font-bold pr-2  ">
                 {featuredBlog.title}
               </div>
-              <p className="pb-1 md:pb-2 mt-4 text-lg md:text-lg text-gray-500 ">
+              <p className="pb-1 lg:pb-2 mt-4 text-3xl lg:text-lg text-gray-500 ">
                 {featuredBlog.excerpt}
               </p>
             </div>
             <Link
               to={`/blog/${featuredBlog.slug}`}
-              className=" inset-x-0 bottom-0 flex justify-center  bg-custom hover:bg-white border-2 border-white text-xl md:text-base  hover:border-2 hover:border-purple-700 rounded-full w-full max-w-md mx-auto md:w-full p-1 text-gray-100 hover:text-purple-700"
+              className=" inset-x-0 bottom-0 flex justify-center  bg-custom hover:bg-white border-2 border-white text-3xl lg:text-lg hover:border-2 hover:border-purple-700 rounded-full w-full max-w-md mx-auto lg:w-full p-1 text-gray-100 hover:text-purple-700"
             >
               Read more
             </Link>
           </div>
         </div>
-        {/* <div className=" mx-auto flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 h-min ">
+        {/* <div className=" mx-auto flex flex-col bg-white shadow-md px-4 sm:px-6 lg:px-8 lg:px-10 py-8 rounded-3xl w-50 h-min ">
                 <div className="font-medium self-center text-xl sm:text-3xl text-gray-800">
                 Join us Now
                 </div>

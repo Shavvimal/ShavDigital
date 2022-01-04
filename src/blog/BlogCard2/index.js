@@ -17,13 +17,13 @@ const BlogCard2 = ({
     <>
       <Link
         to={`/blog/${slug}`}
-        className="flex flex-col lg:flex-row w-5/6 lg:w-1/2 mx-auto bg-white text-black shadow-lg rounded-xl mb-6 hover:scale-105 duration-500  transform transition "
+        className="flex flex-col lg:flex-row w-5/6 lg:w-1/2 mx-auto bg-white text-black shadow-lg rounded-xl mb-6 lg:hover:scale-105 lg:duration-500  lg:transform lg:transition "
       >
         <div className="w-full  lg:w-6/12 rounded-t-xl lg:rounded-l-xl lg:rounded-r-none overflow-hidden">
           <img
             className="object w-full h-full object-cover"
             src={
-              `https://shavbackend.herokuapp.com${thumbnail}` ||
+              `${thumbnail}` ||
               `https://source.unsplash.com/random/?${title
                 .split(" ")
                 .join(",")}`
@@ -49,13 +49,13 @@ const BlogCard2 = ({
             </div>
           </div>
           <div className="h-full flex flex-col justify-center w-5/6 mx-auto">
-            <div className=" text-black text-3xl lg:text-2xl font-bold pr-2  ">
+            <div className=" text-black text-5xl lg:text-2xl font-bold pr-2  pb-4 lg:pb-0">
               {chapter}.{sub_chapter}: {title}
             </div>
-            <h3 className="pb-1 lg:pb-2 text-base lg:text-base text-gray-500 ">
+            <h3 className="pb-1 lg:pb-2 text-4xl lg:text-base text-gray-500 ">
               Chapter {chapter}: {chapter_title}{" "}
             </h3>
-            <p className="pb-1 lg:pb-2 mt-4 text-lg lg:text-lg text-gray-500 ">
+            <p className="pb-8 lg:pb-1 lg:pb-2 mt-4 text-3xl lg:text-lg text-gray-500 ">
               {excerpt}
             </p>
           </div>
