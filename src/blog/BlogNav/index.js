@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const BlogNav = () => (
-  <div className=" w-full h-min flex justify-around text-lg py-2 glow">
+  <div className=" w-full h-min flex justify-around text-3xl lg:text-lg py-2 glow">
     <NavLink
       activeClassName="border-b-2 accentorange "
       className="inline-flex items-center "

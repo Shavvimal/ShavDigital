@@ -26,7 +26,7 @@ const Blog = () => {
     <section className="slide1 text-white pt-20">
       <BlogNav />
       <div className=" w-full h-full flex flex-col flex-wrap flex justify-center items-center pb-32 ">
-        <p className="mb-4 text-3xl  w-5/6 lg:w-4/6 lg:w-1/2 text-center lg:text-2xl">
+        <p className="mb-4 text-4xl  w-5/6 lg:w-4/6 lg:w-1/2 text-center lg:text-2xl">
           {" "}
           Welcome to my Blog! Here's a shuffled post to dive straight in:{" "}
         </p>

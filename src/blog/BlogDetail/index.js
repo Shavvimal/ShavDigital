@@ -27,11 +27,11 @@ const BlogDetail = () => {
   return (
     <section id="homesect" className="slide1 text-white">
       <div className=" w-full h-full flex  flex-wrap pt-20   ">
-        <div className=" h-full w-full pt-4 pb-8 overflow-scroll ">
-          <div className=" w-1/2 mx-auto">
+        <div className=" h-full w-full pt-4 pb-8 overflow-scroll">
+          <div className=" w-full lg:w-1/2 mx-auto">
             <div className="relative pt-[45%]  rounded-2xl">
               <img
-                className="w-4/6 mx-auto h-full rounded-2xl absolute inset-0 object-cover"
+                className="w-5/6 lg:w-4/6 mx-auto h-full rounded-2xl absolute inset-0 object-cover"
                 src={`${blog.thumbnail}`}
                 onError={(e) => {
                   e.target.src = `https://source.unsplash.com/random/?${blog.title
@@ -42,62 +42,63 @@ const BlogDetail = () => {
               />
             </div>
           </div>
+          <div className="px-10 lg:px-0">
+            <article className=" -mt-16   lg:max-w-prose bg-white px-20 rounded-2xl text-black mx-auto py-8 ">
+              <div className="h-16"> </div>
+              <h2 className="mt-2 text-3xl lg:text-sm text-gray-500 text-center">
+                Published in {blog.category}, {blog.month} {blog.day}
+              </h2>
+              <h1 className="text-5xl lg:text-3xl font-bold text-center ">
+                {blog.chapter}.{blog.sub_chapter}: {blog.title}
+              </h1>
+              <h2 className=" text-3xl lg:text-sm mt-1 text-gray-500 text-center">
+                Chapter {blog.chapter}: {blog.chapter_title}
+              </h2>
 
-          <article className=" -mt-16 max-w-prose bg-white px-20 rounded-2xl text-black mx-auto py-8 ">
-            <div className="h-16"> </div>
-            <h2 className="mt-2 text-sm text-gray-500 text-center">
-              Published in {blog.category}, {blog.month} {blog.day}
-            </h2>
-            <h1 className="text-3xl font-bold text-center ">
-              {blog.chapter}.{blog.sub_chapter}: {blog.title}
-            </h1>
-            <h2 className=" text-sm mt-1 text-gray-500 text-center">
-              Chapter {blog.chapter}: {blog.chapter_title}
-            </h2>
-
-            <p
-              className="mt-6 text-lg"
-              dangerouslySetInnerHTML={createBlog()}
-            />
-            <br></br>
-            <p className="lead mb-5 flex items-center justify-between">
-              <Link
-                to={`/blog/category/${blog.category}`}
-                className="text-lg flex items-center "
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  className="mr-2"
+              <p
+                className="mt-6 text-2xl lg:text-lg"
+                dangerouslySetInnerHTML={createBlog()}
+              />
+              <br></br>
+              <p className="lead mb-5 flex items-center justify-between">
+                <Link
+                  to={`/blog/category/${blog.category}`}
+                  className="text-3xl lg:text-lg flex items-center "
                 >
-                  <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" />
-                </svg>
-                Back to All {blog.category}
-              </Link>
+                  <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    className="mr-2"
+                  >
+                    <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" />
+                  </svg>
+                  Back to All {blog.category}
+                </Link>
 
-              <Link
-                to={`/blog/category/${blog.category}/${blog.chapter}`}
-                className="text-lg flex items-center "
-              >
-                View Chapter {blog.chapter}
-                <svg
-                  width="24"
-                  height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  className="ml-2"
+                <Link
+                  to={`/blog/category/${blog.category}/${blog.chapter}`}
+                  className="text-3xl lg:text-lg flex items-center "
                 >
-                  <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                </svg>
-              </Link>
-            </p>
-          </article>
+                  View Chapter {blog.chapter}
+                  <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    className="ml-2"
+                  >
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </Link>
+              </p>
+            </article>
+          </div>
 
-          <div className="mt-20 text-white w-auto border-t-2  mx-20 flex flex-row justify-between px-6 lg:px-16 pt-6 text-lg lg:text-sm">
+          <div className="mt-20 text-white w-auto border-t-2  mx-20 flex flex-row justify-between px-6 lg:px-16 pt-6 text-3xl lg:text-lg lg:text-sm">
             <p className="mt-3"> © 2022 Shav Vimalendiran </p>
             <svg
               className="w-12 h-12"
